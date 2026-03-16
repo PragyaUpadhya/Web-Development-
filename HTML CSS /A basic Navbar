@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #navbar{
+            background-color: black;
+            height: 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        a{
+            color: aliceblue;
+            width:200px;
+            text-decoration-line: none;
+            transition:3s;
+        }
+        a:hover{
+            transform:scale(2);
+
+        
+        }
+        #class{
+           /* background-color: red; */
+            display:flex;
+            justify-content:space-between;
+            
+        }
+        button{
+            height:40px;
+            width:60px;
+            background-color:blanchedalmond;
+
+        }
+        @media screen and (max-width:450px){
+            #navbar{
+                flex-direction: column;
+                height: auto;
+                gap:10px;
+                align-items: center;
+            }
+            #class{
+                flex-direction: column;
+                gap:10px;
+                /*align-items: center;*/
+            }
+        }
+            
+        
+        
+
+        
+        </style>
+    
+            
+   
+</head>
+<body>
+    <div id="navbar">
+        <a>Home</a>
+        <div id="class">
+         <a href="https://www.bing.com/search?q=https%3A%2F%2Fwww.amazon.in%20%E2%80%BA%20home%20%E2%80%BA%20home%0A&form=IPRV10">About</a>
+         <a>contact us</a>
+         <a>my cart</a>
+        </div>
+        <button>login</button>
+    </div>
+</body>
+</html>
